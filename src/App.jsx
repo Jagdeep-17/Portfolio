@@ -1,15 +1,17 @@
 import React from 'react'
+import Navbar from './components/Navigation/Navbar'
+import Home from './pages/Home'
 
 const App = () => {
   return (
   <div
   class="
     w-full h-full
-    bg-white
-    bg-size-[70px_70px]
-    bg-[linear-gradient(to_right,#e0e7ff_1px,transparent_1px),linear-gradient(to_bottom,#e0e7ff_1px,transparent_1px)]
   "
-></div>
+>
+  <Navbar/>
+<Home/>
+</div>
   
   )
 }

@@ -6,7 +6,40 @@ html, body, #root {
   height: 100%;
   width: 100%;
 }
-
 body {
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  background-color: #ffffff;
+
+  background-size: 60px 60px;
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(99, 102, 241, 0.06) 1.5px,
+      transparent 1.5px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(99, 102, 241, 0.06) 1.5px,
+      transparent 1.5px
+    );
+}
+
+
+@theme {
+  --font-NotoSans: "Noto Sans", sans-serif;
+  --font-Boldonse: "Boldonse", sans-serif;
+}
+
+@font-face {
+  font-family: "Caligraphy";
+  src: url("../public/fonts/Priestacy.otf") format("opentype");
+  
+}
+@font-face {
+  font-family: "Rustic";
+  src: url("../public/fonts/RusticRoadway.otf") format("opentype");
+  
 }
