@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 
-/**
- * WalletStack — a fanned stack of payment cards tucked into a "pocket",
- * built with React state driving the hover choreography (instead of chained
- * CSS :hover selectors) so the two hover behaviors stay easy to reason about:
- *   1. Hovering the wallet lifts the whole stack and reveals the balance.
- *   2. Hovering an individual card lifts it further above its siblings
- *      and reveals its full card number.
- */
+
+ 
 const CARDS = [
   {
     id: "stripe",
@@ -75,7 +69,7 @@ export default function WalletStack() {
   const showBalance = walletHover || balanceVisible;
 
   return (
-    <div className="flex flex-col items-center justify-center py-16 absolute left-1/10 bottom-6 rotate-6">
+    <div className="flex flex-col items-center justify-center py-16 absolute right-6 bottom-37  -rotate-12 ">
       <style>{`
         @keyframes wallet-slide-in {
           0%   { transform: translateY(-100px); opacity: 0; }

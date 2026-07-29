@@ -7,13 +7,15 @@ import TicketCard from "../TicketCard";
 import RetroTapePlayer from "../RetroTapePlayer";
 import WalletStack from "../WalletStack";
 import SwingingIDCard from "../SwingingIDCard";
+import Shelf3D from "../Shelf3D";
 
 const Collage_Layer = () => {
   return (
     <div className="absolute inset-0">
      <SwingingIDCard/>
       {/* <WalletStack /> */}
-      {/* <RetroTapePlayer /> */}
+      <Shelf3D/>
+      <RetroTapePlayer />
       <TicketCard />
       <Keyboard />
     </div>

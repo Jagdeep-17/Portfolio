@@ -21,7 +21,7 @@ gate = "Amity",
 seat = "Comp. Engg.",
 }) {
   return (
-    <div className="[perspective:1000px] flex items-center justify-center p-4 absolute top-1 right-10 ">
+    <div className="[perspective:1000px] flex items-center justify-center p-4 absolute bottom-4 right-10 rotate-6">
       <style>{`
         @keyframes ticket-float {
   0% {
