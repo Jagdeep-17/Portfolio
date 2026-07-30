@@ -1,29 +1,35 @@
+
+
+
 import { Canvas } from "@react-three/fiber";
 import { Environment, useGLTF } from "@react-three/drei";
-import shelf from "../assets/models/shelf.glb";
+import mug from "../assets/models/mug.glb"
 
-function ShelfModel() {
-  const { scene } = useGLTF(shelf);
+function MugModel() {
+  const { scene } = useGLTF(mug);
 
   return (
     <primitive
       object={scene}
-      scale={5}
-      position={[0, -0.6, 0]}
-    //   rotation={[0, Math.PI / 8, 0]} // Slightly rotate the shelf
+      scale={15}
+      position={[0,0, 0]}
+      rotation={[0, Math.PI /2.5, 0]} // Slightly rotate the shelf
     />
   );
 }
 
-export default function Shelf3D() {
+export default function Mug() {
   return (
-    <div className="w-[50vw] h-[50vh] absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2" >
+    <div className="w-[50vw] h-[50vh] absolute  top-30 -rotate-6" >
       <Canvas
         camera={{
           position: [0, 0.5, 8],
           fov: 45,
         }}
       >
+       
+         {/* <axesHelper args={[5]} /> */}
+  {/* <gridHelper args={[20, 20]} /> */}
         {/* Lights */}
         <ambientLight intensity={1.8} />
 
@@ -41,10 +47,10 @@ export default function Shelf3D() {
         <Environment preset="city" />
 
         {/* 3D Model */}
-        <ShelfModel />
+        <MugModel />
       </Canvas>
     </div>
   );
 }
 
-useGLTF.preload(shelf);
+useGLTF.preload(mug);

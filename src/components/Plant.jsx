@@ -1,29 +1,36 @@
+
+
+import { OrbitControls } from "@react-three/drei";
+
 import { Canvas } from "@react-three/fiber";
 import { Environment, useGLTF } from "@react-three/drei";
-import shelf from "../assets/models/shelf.glb";
+import plant from "../assets/models/plant.glb"
 
-function ShelfModel() {
-  const { scene } = useGLTF(shelf);
+function PlantModel() {
+  const { scene } = useGLTF(plant);
 
   return (
     <primitive
       object={scene}
-      scale={5}
-      position={[0, -0.6, 0]}
-    //   rotation={[0, Math.PI / 8, 0]} // Slightly rotate the shelf
+      scale={13}
+      position={[2,-1.6, 0]}
+      rotation={[0, Math.PI /2.5, 0]} // Slightly rotate the shelf
     />
   );
 }
 
-export default function Shelf3D() {
+export default function Mug() {
   return (
-    <div className="w-[50vw] h-[50vh] absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2" >
+    <div className="w-[40vw] h-[50vh] absolute top-5 right-2 translate-x-2" >
       <Canvas
         camera={{
-          position: [0, 0.5, 8],
+          position: [2, -0.5, 8],
           fov: 45,
         }}
       >
+       
+         {/* <axesHelper args={[5]} /> */}
+  {/* <gridHelper args={[20, 20]} /> */}
         {/* Lights */}
         <ambientLight intensity={1.8} />
 
@@ -31,6 +38,7 @@ export default function Shelf3D() {
           position={[5, 8, 5]}
           intensity={3}
         />
+        
 
         <directionalLight
           position={[-5, 3, -5]}
@@ -39,12 +47,13 @@ export default function Shelf3D() {
 
         {/* HDR Environment */}
         <Environment preset="city" />
+        
 
         {/* 3D Model */}
-        <ShelfModel />
+        <PlantModel />
       </Canvas>
     </div>
   );
 }
 
-useGLTF.preload(shelf);
+useGLTF.preload(plant);
