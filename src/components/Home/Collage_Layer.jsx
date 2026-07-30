@@ -1,5 +1,4 @@
 import React from "react";
-import Mug from "../../assets/images/Coffee_Mug.png";
 import Notebook from "../../assets/images/notebook.png";
 import Arduino from "../../assets/images/arduino.png";
 import Keyboard from "../Keyboard";
@@ -8,6 +7,9 @@ import RetroTapePlayer from "../RetroTapePlayer";
 import WalletStack from "../WalletStack";
 import SwingingIDCard from "../SwingingIDCard";
 import Shelf3D from "../Shelf3D";
+import Mug from "../Mug"
+import Plant from "../Plant"
+import Terminal from "../Navigation/Terminal";
 
 const Collage_Layer = () => {
   return (
@@ -15,7 +17,10 @@ const Collage_Layer = () => {
      <SwingingIDCard/>
       {/* <WalletStack /> */}
       <Shelf3D/>
+      <Plant/>
       <RetroTapePlayer />
+      <Terminal/>
+      <Mug/>
       <TicketCard />
       <Keyboard />
     </div>
