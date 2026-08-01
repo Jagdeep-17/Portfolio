@@ -11,20 +11,24 @@ import Mug from "../Mug"
 import Plant from "../Plant"
 import Terminal from "../Navigation/Terminal";
 import Keyboard_3d from "../Keyboard_3d";
+import Book_Collection_3d from "../Book_Collection_3d";
+import GoingMerry from "../GoingMerry";
 
 const Collage_Layer = () => {
   return (
-    <div className="absolute inset-0">
+    <div className="absolute inset-0  overflow-y-visible">
      <SwingingIDCard/>
       {/* <WalletStack /> */}
       <Shelf3D/>
-      <Plant/>
+      {/* <Plant/> */}
       <RetroTapePlayer />
       <Terminal/>
       <Mug/>
       <TicketCard />
       {/* <Keyboard /> */}
       <Keyboard_3d/>
+    <Book_Collection_3d/>
+    <GoingMerry/>
     </div>
   );
 };

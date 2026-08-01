@@ -6,7 +6,7 @@ const App = () => {
   return (
   <div
   className="
-    w-full h-full overflow-visible
+    w-full h-full overflow-y-visible  overflow-x-hidden
   "
 >
   <Navbar/>
