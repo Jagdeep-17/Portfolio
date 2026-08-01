@@ -12,8 +12,8 @@ function PlantModel() {
   return (
     <primitive
       object={scene}
-      scale={13}
-      position={[2,-1.6, 0]}
+      scale={11}
+      position={[2,0.3, 0]}
       rotation={[0, Math.PI /2.5, 0]} // Slightly rotate the shelf
     />
   );
@@ -21,10 +21,10 @@ function PlantModel() {
 
 export default function Mug() {
   return (
-    <div className="w-[40vw] h-[50vh] absolute top-5 right-2 translate-x-2" >
+    <div className="w-[40vw] h-[50vh] absolute top-5 right-2 translate-x-2 overflow-visible " >
       <Canvas
         camera={{
-          position: [2, -0.5, 8],
+          position: [2, 0, 8],
           fov: 45,
         }}
       >

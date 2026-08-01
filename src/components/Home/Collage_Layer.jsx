@@ -10,6 +10,7 @@ import Shelf3D from "../Shelf3D";
 import Mug from "../Mug"
 import Plant from "../Plant"
 import Terminal from "../Navigation/Terminal";
+import Keyboard_3d from "../Keyboard_3d";
 
 const Collage_Layer = () => {
   return (
@@ -22,7 +23,8 @@ const Collage_Layer = () => {
       <Terminal/>
       <Mug/>
       <TicketCard />
-      <Keyboard />
+      {/* <Keyboard /> */}
+      <Keyboard_3d/>
     </div>
   );
 };
