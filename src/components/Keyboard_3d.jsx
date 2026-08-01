@@ -16,8 +16,8 @@ function KeyModel() {
    <primitive
       object={scene}
       rotation={[1.27, 0, 0]}
-      scale={0.04}
-      position={[-12.5, -3, 0]}
+      scale={0.035}
+      position={[-11.2, -3, 0]}
     />
   );
 }
@@ -27,7 +27,7 @@ export default function Keyboard3D() {
     <>
       {/* Debug Panel */}
 
-      <div className="absolute bottom-2 left-1/2 h-[50vh] w-[80vw] -translate-x-1/2">
+      <div className="absolute bottom-2 left-1/2 h-[50vh] w-[60vw] -translate-x-1/2">
         <Canvas
           camera={{
             position: [0, 1, 30],

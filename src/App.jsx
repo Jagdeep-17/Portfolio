@@ -5,8 +5,8 @@ import Home from './pages/Home'
 const App = () => {
   return (
   <div
-  class="
-    w-full h-full
+  className="
+    w-full h-full overflow-visible
   "
 >
   <Navbar/>

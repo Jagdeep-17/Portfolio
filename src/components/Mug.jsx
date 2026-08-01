@@ -11,7 +11,7 @@ function MugModel() {
   return (
     <primitive
       object={scene}
-      scale={15}
+      scale={13}
       position={[0,0, 0]}
       rotation={[0, Math.PI /2.5, 0]} // Slightly rotate the shelf
     />
