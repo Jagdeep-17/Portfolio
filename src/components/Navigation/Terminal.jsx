@@ -4,7 +4,7 @@ const Terminal = () => {
   return (
     <div className="max-w-[14em] w-full h-43 bg-black rounded-[0.75em] shadow-[0_0.5em_2em_rgba(0,0,0,0.2)] overflow-hidden flex flex-col absolute bottom-58 right-40">
       {/* Header */}
-      <div className="h-[1.75em] bg-indigo-500 flex items-center p-2">
+      <div className="h-[1.75em] bg-gray-700 flex items-center p-2">
         <div className="flex gap-[0.35em]">
           <div className="w-[0.55em] h-[0.55em] rounded-full bg-[#FF3B30]"></div>
           <div className="w-[0.55em] h-[0.55em] rounded-full bg-[#FFD60A]"></div>

@@ -13,6 +13,7 @@ import Terminal from "../Navigation/Terminal";
 import Keyboard_3d from "../Keyboard_3d";
 import Book_Collection_3d from "../Book_Collection_3d";
 import GoingMerry from "../GoingMerry";
+import Holder from "../Holder";
 
 const Collage_Layer = () => {
   return (
@@ -28,6 +29,7 @@ const Collage_Layer = () => {
       {/* <Keyboard /> */}
       <Keyboard_3d/>
     <Book_Collection_3d/>
+    <Holder/>
     <GoingMerry/>
     </div>
   );

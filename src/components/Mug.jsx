@@ -11,8 +11,8 @@ function MugModel() {
   return (
     <primitive
       object={scene}
-      scale={13}
-      position={[0,0, 0]}
+      scale={20}
+      position={[0,-0.5, 0]}
       rotation={[0, Math.PI /2.5, 0]} // Slightly rotate the shelf
     />
   );
@@ -20,7 +20,7 @@ function MugModel() {
 
 export default function Mug() {
   return (
-    <div className="w-[50vw] h-[50vh] absolute  top-30 -rotate-6" >
+    <div className="w-[20vw] h-[26vh] absolute  top-60 -rotate-6 translate-x-1/2 left-12 " >
       <Canvas
         camera={{
           position: [0, 0.5, 8],
