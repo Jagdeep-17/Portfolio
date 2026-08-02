@@ -4,7 +4,7 @@ import Collage_Layer from '../components/Home/Collage_Layer'
 
 const Home = () => {
   return (
-    <div className='h-screen w-full relative overflow-y-visible'>
+    <div className='h-screen w-full relative overflow-y-visible mb-24'>
 <HomeHeading/>
 <Collage_Layer/>
 </div>
