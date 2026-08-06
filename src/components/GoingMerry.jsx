@@ -27,7 +27,7 @@ export default function GoingMerry() {
       {/* <Leva collapsed={false} /> */}
 
       {/* Anchor box - defines position, but overflow-visible so children can bleed out */}
-      <div className="w-[30vw] h-[36vh] absolute top-0 left-1/2 -translate-x-1/2 overflow-visible pointer-events-none">
+      <div className="w-[30vw] h-[36vh] absolute top-0 left-1/2 -translate-x-1/2   overflow-visible pointer-events-none">
 
         {/* Oversized wrapper - THIS is what actually overflows the anchor above */}
         <div className="absolute -left-[40%] -top-[30%] w-[180%] h-[160%] pointer-events-auto">

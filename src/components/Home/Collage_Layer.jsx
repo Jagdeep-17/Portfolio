@@ -29,7 +29,7 @@ const Collage_Layer = () => {
       {/* <Keyboard /> */}
       <Keyboard_3d/>
     <Book_Collection_3d/>
-    <Holder/>
+    {/* <Holder/> */}
     <GoingMerry/>
     </div>
   );

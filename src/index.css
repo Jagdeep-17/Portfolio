@@ -43,3 +43,7 @@ body {
   src: url("../public/fonts/RusticRoadway.otf") format("opentype");
   
 }
+/* @font-face {
+  font-family: "Ease";
+  src: url(".././public/fonts/EaseDoubleRounded-Regular.woff2") format("opentype");
+} */

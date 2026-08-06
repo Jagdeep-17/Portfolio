@@ -117,17 +117,17 @@ export default function SwingingIDCard() {
                 <img
                   src={Jagdeep}
                   alt="Jagdeep"
-                  className="h-full w-full object-cover transition-opacity duration-300 group-hover/badge:opacity-0"
+                  className="h-full w-full object-cover transition-opacity duration-300 "
                   draggable={false}
                 />
-                <video
+                {/* <video
                   src="/badge-hover.mp4"
                   muted
                   loop
                   playsInline
                   autoPlay
                   className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-300 group-hover/badge:opacity-100"
-                />
+                /> */}
               </div>
             </div>
           </div>
