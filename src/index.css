@@ -31,6 +31,7 @@ body {
 @theme {
   --font-NotoSans: "Noto Sans", sans-serif;
   --font-Boldonse: "Boldonse", sans-serif;
+
 }
 
 @font-face {
@@ -47,3 +48,9 @@ body {
   font-family: "Ease";
   src: url(".././public/fonts/EaseDoubleRounded-Regular.woff2") format("opentype");
 } */
+
+@font-face {
+  font-family: "Prime";
+  src: url("../public/fonts/courier-prime.regular.ttf") format("truetype");
+  
+}
