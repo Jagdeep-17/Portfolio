@@ -9,7 +9,7 @@ function ShipModel() {
       object={scene}
       position={[0, 1.7, -1.5]}
       rotation={[-5.65, 0.83, -0.18]}
-      scale={0.56}
+      scale={0.50}
     />
   );
 }

@@ -15,7 +15,7 @@ function Scene() {
         fov={50}
       />
 
-      <ambientLight intensity={2} />
+      <ambientLight intensity={2.5} />
 
       <Keyboard_3d />
       <Mug />

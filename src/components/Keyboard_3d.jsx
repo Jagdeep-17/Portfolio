@@ -7,9 +7,9 @@ export default function Keyboard_3d() {
   return (
     <primitive
       object={scene}
-      position={[-2.2, -2.4, -0.5]}
+      position={[-1.9, -2.4, -0.5]}
       rotation={[1.14, 0, 0]}
-      scale={0.007}
+      scale={0.006}
     />
   );
 }
