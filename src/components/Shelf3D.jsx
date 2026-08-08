@@ -1,5 +1,4 @@
-import { Canvas } from "@react-three/fiber";
-import { Environment, useGLTF } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import shelf from "../assets/models/shelf.glb";
 
 function ShelfModel() {
@@ -8,43 +7,15 @@ function ShelfModel() {
   return (
     <primitive
       object={scene}
-      scale={5}
-      position={[0, -0.6, 0]}
-    //   rotation={[0, Math.PI / 8, 0]} // Slightly rotate the shelf
+      position={[0, -0.4, 0]}
+      rotation={[0, 0, 0]}
+      scale={3.3}
     />
   );
 }
 
 export default function Shelf3D() {
-  return (
-    <div className="w-[50vw] h-[50vh] absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2" >
-      <Canvas
-        camera={{
-          position: [0, 0.5, 8],
-          fov: 45,
-        }}
-      >
-        {/* Lights */}
-        <ambientLight intensity={1.8} />
-
-        <directionalLight
-          position={[5, 8, 5]}
-          intensity={3}
-        />
-
-        <directionalLight
-          position={[-5, 3, -5]}
-          intensity={1}
-        />
-
-        {/* HDR Environment */}
-        <Environment preset="city" />
-
-        {/* 3D Model */}
-        <ShelfModel />
-      </Canvas>
-    </div>
-  );
+  return <ShelfModel />;
 }
 
 useGLTF.preload(shelf);
